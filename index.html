@@ -196,7 +196,12 @@
 						</div> -->
 					</div>
 					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal5" id="btn-sumergeme">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal5" id="btn-sumergeme" onclick="alert('Click FB sumergeme');
+						fbq('track', 'ViewContent', {
+				    value: 1,
+				    currency: 'col',
+				    content_ids: 'sumergeme',
+			  	});">
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
 									<i class="fa fa-plus fa-3x"></i>
@@ -715,6 +720,7 @@
 	    currency: 'col',
 	    content_ids: 'sumergeme',
   	});
+		};)
 		</script>
 		
 
